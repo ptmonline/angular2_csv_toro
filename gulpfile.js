@@ -4,7 +4,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
 gulp.task('default', function() {
-gulp.src('less/*.less')
+gulp.src('src/less/*.less')
   .pipe(less())
   .pipe(rename({
             suffix: '.min'
@@ -13,9 +13,9 @@ gulp.src('less/*.less')
             console.log(details.name + ': ' + details.stats.originalSize);
             console.log(details.name + ': ' + details.stats.minifiedSize);
         }))
-  .pipe(gulp.dest('css'));
+  .pipe(gulp.dest('src/css'));
 })
 
 gulp.task('watch', function(){
-  gulp.watch('less/*.less', ['default'])
+  gulp.watch('src/less/*.less', ['default'])
 })
