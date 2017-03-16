@@ -11,7 +11,7 @@
   display: none;
 }
 
-$color-white: #ffffff;
+$color-background: #ffffff;
 $color-secundary: #dddddd;
 $color-warning: #f40e0e;
 
@@ -46,7 +46,7 @@ $color-warning: #f40e0e;
     border-radius: rem(4px);
   }
   input[readonly] {
-    background-color: $color-white !important;
+    background-color: $color-background !important;
     cursor: text !important;
   }
 }
