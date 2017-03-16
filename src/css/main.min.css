@@ -3,7 +3,7 @@
   display: none; }
 
 .input-group {
-  margin-bottom: 20px; }
+  margin-bottom: 2rem; }
   .input-group .btn-file {
     position: relative;
     overflow: hidden; }
@@ -13,7 +13,7 @@
       right: 0;
       min-width: 100%;
       min-height: 100%;
-      font-size: 100px;
+      font-size: 10rem;
       text-align: right;
       filter: alpha(opacity=0);
       opacity: 0;
@@ -21,11 +21,11 @@
       cursor: inherit;
       display: block; }
   .input-group .file-input-label {
-    padding: 0px 10px;
+    padding: 0rem 1rem;
     display: table-cell;
     vertical-align: middle;
-    border: 1px solid #dddddd;
-    border-radius: 4px; }
+    border: 0.1rem solid #dddddd;
+    border-radius: 0.4rem; }
   .input-group input[readonly] {
     background-color: #ffffff !important;
     cursor: text !important; }

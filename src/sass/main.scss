@@ -1,6 +1,11 @@
 // SETUP ------------------------------------------------
 // ------------------------------------------------------
 
+@function rem( $size, $base: 10px ) {
+  $rem-size: $size / $base;
+  @return #{$rem-size}rem;
+}
+
 %base-invisible {
   visibility: hidden;
   display: none;
@@ -14,7 +19,7 @@ $color-warning: #f40e0e;
 // ------------------------------------------------------
 
 .input-group{
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   .btn-file {
     position: relative;
     overflow: hidden;
@@ -24,7 +29,7 @@ $color-warning: #f40e0e;
       right: 0;
       min-width: 100%;
       min-height: 100%;
-      font-size: 100px;
+      font-size: rem(100px);
       text-align: right;
       filter: alpha(opacity=0);
       opacity: 0;
@@ -34,11 +39,11 @@ $color-warning: #f40e0e;
     }
   }
   .file-input-label {
-    padding: 0px 10px;
+    padding: rem(0px) rem(10px);
     display: table-cell;
     vertical-align: middle;
-    border: 1px solid $color-secundary;
-    border-radius: 4px;
+    border: rem(1px) solid $color-secundary;
+    border-radius: rem(4px);
   }
   input[readonly] {
     background-color: $color-white !important;
@@ -49,7 +54,7 @@ $color-warning: #f40e0e;
   border:none;
   tr{
     td{
-      font-weight:bold; 
+      font-weight: bold; 
       text-transform: uppercase;
     }
   }
