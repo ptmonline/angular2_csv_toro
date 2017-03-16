@@ -1,3 +1,18 @@
+// SETUP ------------------------------------------------
+// ------------------------------------------------------
+
+%base-invisible {
+  visibility: hidden;
+  display: none;
+}
+
+$color-white: #ffffff;
+$color-secundary: #dddddd;
+$color-warning: #f40e0e;
+
+// BASIC ------------------------------------------------
+// ------------------------------------------------------
+
 .input-group{
   margin-bottom: 20px;
   .btn-file {
@@ -13,7 +28,7 @@
       text-align: right;
       filter: alpha(opacity=0);
       opacity: 0;
-      background: red;
+      background: $color-warning;
       cursor: inherit;
       display: block; 
     }
@@ -22,11 +37,11 @@
     padding: 0px 10px;
     display: table-cell;
     vertical-align: middle;
-    border: 1px solid #ddd;
+    border: 1px solid $color-secundary;
     border-radius: 4px;
   }
   input[readonly] {
-    background-color: white !important;
+    background-color: $color-white !important;
     cursor: text !important;
   }
 }
@@ -40,6 +55,5 @@
   }
 }
 #submitBtn{
-  visibility:hidden;
-  display:none;
-}
+  @extend %base-invisible; 
+} 

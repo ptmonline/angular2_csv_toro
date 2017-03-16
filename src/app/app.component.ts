@@ -4,4 +4,4 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   templateUrl: './app/app.component.html'
 })
-export class AppComponent  { title = 'Toro Angular2 CSV test'; }
+export class AppComponent  { title = 'TORO Angular2 test'; }
