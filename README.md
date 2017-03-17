@@ -1,2 +1,3 @@
 # angular2_csv_toro
-Angular2 upload cvs files *test two*.
+Angular2 upload cvs files.
+*Beta Vesrion*.
