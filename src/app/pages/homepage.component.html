@@ -3,7 +3,10 @@
     <div class="input-group">
         <span class="input-group-btn">
             <label class="btn btn-primary btn-file" for="multiple_input_group">
-              <div class="input required"><input id="multiple_input_group" type="file" name="file"></div> Browse
+              <div class="input required">
+                  <!--<input id="multiple_input_group" type="file" name="file">-->
+                  <input type="file" ng2FileSelect [uploader]="uploader" />
+                  </div> Browse
             </label>
           </span>
         <span id="file-label" class="file-input-label"></span>

@@ -38,18 +38,21 @@ $color-warning: #f40e0e;
       display: block; 
     }
   }
+
   .file-input-label {
     padding: rem(0px) rem(10px);
     display: table-cell;
     vertical-align: middle;
     border: rem(1px) solid $color-secundary;
     border-radius: rem(4px);
-  }
-  input[readonly] {
-    background-color: $color-background !important;
-    cursor: text !important;
+  } 
+
+  input[readonly] { 
+    background-color: $color-background !important; 
+    cursor: text !important; 
   }
 }
+
 .table-responsive{
   border:none;
   tr{
@@ -59,6 +62,7 @@ $color-warning: #f40e0e;
     }
   }
 }
+
 #submitBtn{
   @extend %base-invisible; 
 } 
