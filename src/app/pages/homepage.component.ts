@@ -9,7 +9,7 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 })
 
 export class HomepageComponent {
-    public uploader:FileUploader = new FileUploader({url: URL});
+    public uploader:FileUploader = new FileUploader({url:'http://localhost:3000/upload'});
     constructor() { }
-    
+
 }
