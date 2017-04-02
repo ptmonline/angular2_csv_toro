@@ -48,12 +48,12 @@ gulp.task('lint', function() {
 
     // run server
 gulp.task( 'server:start', function() {
-    server.listen( { path: './app.js' } );
+    server.listen( { path: './server.js' } );
 });
 
 // restart server if app.js changed
 gulp.task( 'server:restart', function() {
-    gulp.watch( [ './app.js' ], server.restart );
+    gulp.watch( [ './server.js' ], server.restart );
 });
 
 gulp.task('default', ['lint','server:start','server:restart']);

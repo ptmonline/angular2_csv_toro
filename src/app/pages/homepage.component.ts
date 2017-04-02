@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
 
-const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
+const URL = 'http://localhost:3001/upload';
 // const URL = '/files/'
 
 @Component({
@@ -11,6 +11,8 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 
 export class HomepageComponent {
     public uploader:FileUploader = new FileUploader({url:URL});
-    constructor() { }
+    constructor() {
+      console.log(this.uploader)
+     }
 
 }

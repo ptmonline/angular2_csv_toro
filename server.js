@@ -13,7 +13,7 @@ var express = require('express');
 
     /** Serving from the same express Server
     No cors required */
-    app.use(express.static('../client'));
+    app.use(express.static('./src/app'));
     app.use(bodyParser.json());
 
     var storage = multer.diskStorage({ //multers disk storage settings
