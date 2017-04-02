@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { HomepageComponent } from './pages/homepage.component';
 import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload';
+import { HttpModule }    from '@angular/http';
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpModule],
   declarations: [AppComponent, HomepageComponent, FileSelectDirective],
   bootstrap: [AppComponent]
 })
