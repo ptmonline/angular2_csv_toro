@@ -13,14 +13,12 @@ export class HomepageComponent {
     public uploader:FileUploader = new FileUploader({url:URL});
     public data: any;
     constructor(private http: Http) {
-      console.log(this.uploader);
       this.uploader.setOptions({autoUpload: true});
      }
      displayFile(item: any){
        console.log(item)
         this.http.get('../../uploads/' + item.file.name)
                 .subscribe(res => this.data = res);
-                console.log(this.data)
 
      }
 }
