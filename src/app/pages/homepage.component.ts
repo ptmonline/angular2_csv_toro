@@ -3,7 +3,6 @@ import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
 import { Headers, Http } from '@angular/http';
 
 const URL = 'http://localhost:3001/upload';
-// const URL = '/files/'
 
 @Component({
     selector: 'homepage',
